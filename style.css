@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #1e293b;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    top: 0%;
+    z-index: 10;
+    padding: 20px 8%;
+
+    display: flex;
+
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0f172a, #312e81);
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home h1 span {
+    color: #38bdf8;
+}
+
+.home p {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 35px;
+}
+
+.about {
+    line-height: 1.8;
+    text-align: center;
+    color: #cbd5e1;
+    max-width: 850px;
+    margin: auto;
+
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill{
+    background: #1e293b;
+    padding: 25px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    transition: 0.3s;
+
+}
+
+.skill:hover{
+    border-color: #38bdf8;
+    transform: translateY(-8px);
+}
+
+.skill h3{
+    border-color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.experience-card{
+    background: #1e293b;
+    border-left: 4px solid #38bdf8;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+
+}
+
+.experience-card h3{
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.experience-card p{
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.contact{
+    text-align: center;
+    line-height: 2.2;
+}
+
+.contact p{
+    color: #cbd5e1;
+}
+
+.contact a{
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+footer{
+    background: #1e293b;
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 34px;
+            }
+
+            .home p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
